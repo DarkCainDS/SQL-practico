@@ -1,0 +1,12 @@
+SELECT *
+FROM dblink('
+	dbname=somedb
+	port=5432 host=someserver
+	user=someuser
+	password=somepwd',
+	'SELECT gid, area, parimeter,
+			state, country,
+			tract, blockgroup,
+			block, the_geom
+	FROM massgis.cens2000blocks')
+	AS blockgroups

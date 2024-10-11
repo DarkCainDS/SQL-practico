@@ -1,0 +1,24 @@
+La sentencia ORDER BY tiene que ver con el ordenamiento de los datos dependiendo de los criterios que quieras usar.
+
+ASC sirve para ordenar de forma ascendente.
+
+DESC sirve para ordenar de forma descendente.
+
+LIMIT se usa para limitar la cantidad de resultados que arroja el query.
+
+HAVING tiene una similitud muy grande con WHERE, sin embargo el uso de ellos depende del orden. Cuando se quiere seleccionar tuplas agrupadas únicamente se puede hacer con HAVING.
+
+HAVING es similar a WHERE aunque no muy utilizada, pero es necesaria cuando quieres hacer un filtro con datos agrupados por un ORDER BY, HAVING siempre va despues del GROUP BY
+
+
+SELECT *
+FROM tabla_diaria
+ORDER BY fecha;
+
+SELECT *
+FROM tabla_diaria
+ORDER BY fecha ASC;
+
+SELECT *
+FROM tabla_diaria
+ORDER BY fecha DESC;

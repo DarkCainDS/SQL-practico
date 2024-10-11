@@ -1,0 +1,14 @@
+Los tipos de rango que vienen en PostgreSQL son:
+
+int4range: Que trae un rango de enteros.
+
+int8range: Es un rango de enteros grandes.
+
+numrange: Es un rango numérico.
+
+tsrange: Es un rango del tipo timestamp pero sin la zona horaria.
+
+tstzrange: Es un rango del tipo timestamp con la zona horaria
+
+daterange: Es un rango del tipo fecha.
+Esos son los que podemos usar como selectores de rango dentro de PostgreSQL si les interesa conocer más Acá
